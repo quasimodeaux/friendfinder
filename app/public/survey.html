@@ -1,87 +1,109 @@
 <html>
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script type="text/javascript" src="/survey.js"></script>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" href="../../style.css">
 
 </head>
-<body>
+<div id="container" style="background-color:#eeeeee;opacity: 0.7;">
+<body background="https://i.imgur.com/1ieNgtL.jpg" id="background" style="background-size:contain;">
 
 <form>
-    <div class="form-group">
-        <label for="quest1">You really enjoy Migos:</label>
-        <select class="form-control" id="quest1">
+    <div class="col-md-6">
+        <label for="q1">Protect the healer over dps:</label>
+        <select class="chosen-select" id="q1" name="scores[]">
+            <option value=""></option>
             <option value="1">1 - Strongly Agree</option>
             <option value="2">2 - Agree</option>
             <option value="3">3 - Neutral</option>
             <option value="4">4 - Disagree</option>
             <option value="5">5 - Strongly Disagree</option>
-        </select>
-        <label for="quest1">You believe that Tupac was better than Biggie:</label>
-        <select class="form-control" id="quest2">
+        </select><br>
+        <label for="q2">Will choose flex characters if needed:</label>
+        <select class="chosen-select" id="q2">
+            <option value=""></option>
             <option value="1">1 - Strongly Agree</option>
             <option value="2">2 - Agree</option>
             <option value="3">3 - Neutral</option>
             <option value="4">4 - Disagree</option>
             <option value="5">5 - Strongly Disagree</option>
-        </select>
-        <label for="quest1">You hate people who don't like new trap music:</label>
-        <select class="form-control" id="quest3">
+        </select><br>
+        <label for="q3">I play the objective more than most:</label>
+        <select class="chosen-select" id="q3">
+            <option value=""></option>
             <option value="1">1 - Strongly Agree</option>
             <option value="2">2 - Agree</option>
             <option value="3">3 - Neutral</option>
             <option value="4">4 - Disagree</option>
             <option value="5">5 - Strongly Disagree</option>
-        </select>
-        <label for="quest1">You are pissed at what these kids listen to these days:</label>
-        <select class="form-control" id="quest4">
+        </select><br>
+        <label for="q4">When teammates ask to switch I will ignore them:</label>
+        <select class="chosen-select" id="q4">
+            <option value=""></option>
             <option value="1">1 - Strongly Agree</option>
             <option value="2">2 - Agree</option>
             <option value="3">3 - Neutral</option>
             <option value="4">4 - Disagree</option>
             <option value="5">5 - Strongly Disagree</option>
-        </select>
-        <label for="quest1">You can't seem to care much for new artists:</label>
-        <select class="form-control" id="quest5">
+        </select><br>
+        <label for="q5">When losing I will put the blame on my teammates:</label>
+        <select class="chosen-select" id="q5">
+            <option value=""></option>
             <option value="1">1 - Strongly Agree</option>
             <option value="2">2 - Agree</option>
             <option value="3">3 - Neutral</option>
             <option value="4">4 - Disagree</option>
             <option value="5">5 - Strongly Disagree</option>
-        </select>
-        <label for="quest1">A new purse solves everything:</label>
-        <select class="form-control" id="quest6">
+        </select><br>
+        <label for="q6">Killing DPS is my number one priority:</label>
+        <select class="chosen-select" id="q6">
+            <option value=""></option>
             <option value="1">1 - Strongly Agree</option>
             <option value="2">2 - Agree</option>
             <option value="3">3 - Neutral</option>
             <option value="4">4 - Disagree</option>
             <option value="5">5 - Strongly Disagree</option>
-        </select>
-        <label for="quest1">You take off your earrings before battle:</label>
-        <select class="form-control" id="quest7">
+        </select><br>
+        <label for="q7">I will only play snipers:</label>
+        <select class="chosen-select" id="q7">
+            <option value=""></option>
             <option value="1">1 - Strongly Agree</option>
             <option value="2">2 - Agree</option>
             <option value="3">3 - Neutral</option>
             <option value="4">4 - Disagree</option>
             <option value="5">5 - Strongly Disagree</option>
-        </select>
-        <label for="quest1">You feel like noone reps Cardi B but she's so real:</label>
-        <select class="form-control" id="quest8">
+        </select><br>
+        <label for="q8">I will never play a healer:</label>
+        <select class="chosen-select" id="q8">
+            <option value=""></option>
             <option value="1">1 - Strongly Agree</option>
             <option value="2">2 - Agree</option>
             <option value="3">3 - Neutral</option>
             <option value="4">4 - Disagree</option>
             <option value="5">5 - Strongly Disagree</option>
-        </select>
-        <label for="quest1">Remy Ma should have won best female hip hop artists:</label>
-        <select class="form-control" id="quest9">
+        </select><br>
+        <label for="q9">You play overwatch to have fun not to win:</label>
+        <select class="chosen-select" id="q9">
+            <option value=""></option>
             <option value="1">1 - Strongly Agree</option>
             <option value="2">2 - Agree</option>
             <option value="3">3 - Neutral</option>
             <option value="4">4 - Disagree</option>
             <option value="5">5 - Strongly Disagree</option>
-        </select>
-        <label for="quest1">Meek Mill will always stay a L:</label>
-        <select class="form-control" id="quest10">
+        </select><br>
+        <label for="q10">We lose and it's not your fault ever:</label>
+        <select class="chosen-select" id="q10">
+            <option value=""></option>
             <option value="1">1 - Strongly Agree</option>
             <option value="2">2 - Agree</option>
             <option value="3">3 - Neutral</option>
@@ -91,9 +113,129 @@
     </div>
 </form>
 
-<a href="/home">
-    <button class="btn btn-default" id="survey">Submit</button>
-</a>
+
+<button type="submit" button class="btn btn-default" id="submit">Submit</button>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <p><a href="/api/friends">API Friends List</a></p>
+    </div>
+</footer>
+
+
+
+</div>
+
+
+
+
+
+
+<div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+   <div class="modal-content">
+       <div class="modal-header">
+           <button type="button"
+                   class="close"
+                   data-dismiss="modal">&times;
+           </button>
+                <h2 class="modal-title"><strong>Best Match</strong></h2>
+       </div>
+            <div class="modal-body">
+                <h2 id="match-name"></h2>
+                <img id="match-img"
+                     src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"
+                     alt="">
+            </div>
+            <div class="modal-footer">
+                <button type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    var config = {
+        ".chosen-select"           : {},
+        ".chosen-select-deselect"  : {
+            allow_single_deselect: true
+        },
+        ".chosen-select-no-single" : {
+            disable_search_threshold: 10
+        },
+        ".chosen-select-no-results": {
+            no_results_text: "Oops, nothing found!"
+        },
+        ".chosen-select-width"     : {
+            width: "95%"
+        }
+    };
+
+    for (var selector in config) {
+        $(selector).chosen(config[selector]);
+    }
+
+
+    $("#submit").on("click", function(event) {
+        event.preventDefault();
+
+
+        function formValidation() {
+            var isValid = true;
+            $(".form-control").each(function() {
+                if ($(this).val() === "") {
+                    isValid = false;
+                }
+            });
+
+            $(".chosen-select").each(function() {
+
+                if ($(this).val() === "") {
+                    isValid = false;
+                }
+            });
+            return isValid;
+        };
+
+
+        if (formValidation()) {
+            var userData = {
+                name  : $("#name").val(),
+                photo : $("#photo").val(),
+                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(),
+                    $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(),
+                    $("#q9").val(), $("#q10").val()]
+            };
+
+
+            $.post("/api/friends", userData, function(data) {
+
+
+                $("#match-name").text(data.name);
+                $("#match-img").attr("src", data.photo);
+
+
+                $("#results-modal").modal("toggle");
+
+            });
+        } else {
+            alert("Please fill out all fields before submitting!");
+        }
+    });
+</script>
 </body>
 
 

@@ -1,5 +1,12 @@
-#background{
-    background-repeat: no-repeat;
-    background-position: center;
+
+#container{
+    float:left;
+    background-color:#eeeeee;
+    opacity: 0.5;
+}
+
+
+#thetank{
+    background-color:#eeeeee;
 }
 
